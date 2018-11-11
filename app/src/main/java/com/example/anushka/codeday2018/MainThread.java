@@ -7,7 +7,7 @@ import android.view.SurfaceHolder;
  * Created by Anushka on 11/10/18.
  */
 
-public class MainThreadA extends Thread {
+public class MainThread extends Thread {
     private SurfaceHolder surfaceHolder;
     private GameView gameView;
     private boolean running;
