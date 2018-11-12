@@ -12,34 +12,34 @@ import java.util.Random;
  * Created by Anushka on 11/10/18.
  */
 
-public class CharacterSprite {
+public class TreeSprite {
     private Bitmap image;
-    private int myX, myY;
+    private int x, y;
     private int xVelocity = 10;
     private int yVelocity = 5;
     private int screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
     private int screenHeight = Resources.getSystem().getDisplayMetrics().heightPixels;
 
-    public CharacterSprite(Bitmap bmp, int x, int y) {
+    public TreeSprite(Bitmap bmp) {
         image = bmp;
 
         //List<Customer> newList = new ArrayList<>( oldList );
         //Collections.shuffle( newList ) ;
-        myX = x;
-        myY = y;
+        x = 10;
+        y = 10;
     }
 
     public void draw(Canvas canvas) {
-        canvas.drawBitmap(image, myX, myY, null);
+        canvas.drawBitmap(image, x, y, null);
     }
 
     public void update() {
-  //      y++;
-    //    if(y >= screenHeight*0.85)
-      //      image.hide();
+        //      y++;
+        //    if(y >= screenHeight*0.85)
+        //      image.hide();
 
         //x += xVelocity;
-        myY += yVelocity;
+     //   y += yVelocity;
         /*if((x >screenWidth - image.getWidth()) || (x < 0)) {
             xVelocity = xVelocity - 1;
         }
@@ -48,5 +48,5 @@ public class CharacterSprite {
         }
     */
     }
-    }
+}
 
